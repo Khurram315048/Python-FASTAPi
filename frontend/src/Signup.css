@@ -1,0 +1,42 @@
+/* Inherits most styles from Login.css structure, specific tweaks here */
+:root {
+  --primary-500: #7c3aed;
+  --primary-400: #667eea;
+}
+
+.auth-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 60px; /* Extra padding bottom for scroll */
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px; /* Slightly wider for signup */
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 32px;
+  text-align: center;
+}
+
+/* ... (Include same typo/input classes as Login.css for consistency) ... */
+/* For brevity, I am assuming you will copy the shared classes (auth-header, inputs, btn) from Login.css or use a shared file. 
+   Below are specific overrides if needed. */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 500px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
